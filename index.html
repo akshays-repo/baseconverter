@@ -1,33 +1,41 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Base Converter</title>
+<!-----Including CSS for different screen sizes----->
+<link rel="stylesheet" type="text/css" href="css/responsiveform.css">
+<link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="css/responsiveform1.css" />
+<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 351px)" href="css/responsiveform2.css" />
+<link rel="stylesheet" media="screen and (max-width: 350px)" href="css/responsiveform3.css" />
+</head>
+<body>
+<div id="envelope">
+<form action="" method="">
+<header>
+<h2>Simple Base converter with js </h2>
+</header>
+<br/>
+<input name="name" placeholder="Enter the input" type="text" width="100px;"id="data1">
+<form method=""  >  
+    <select id = 'list' name="focus" required class="list" placeholder=" select encryption method ">
+        <option required class="search-box" value="null">---select convertion mode ---</option>
+        <option required class="search-box" value="B"> TO BINARY </option>
+        <option required class="search-box" value="H">TO HEXADECIMAL </option>
+        <option required class="search-box" value="O"> TO OCTAL  </option>
+        </option>
 
-<h1> Decimal convertion <br></h1>
-<script src="js/index.js"></script>
-<link rel="stylesheet" href="css/index.css">
-<div class="search-wrapper" id="page1">
-	<form >
-    <input type="text" name="focus" required class="search-box" id="data1" placeholder="Enter the text to Encryption" />
-	<button class="close-icon" type="reset"></button>
-	<br>
+    </select>
+<input id="submit" type="submit" value="submit" onclick="datacollection()" >
+<input id="output" placeholder="output" type="text">
+<input id="submit" type="submit" value="copy to clipboard " onclick="copyClipboard()" >
+<footer>
+    <p>Posted by: Akshay s </p>
+    <p>Contact information: <a href="mailto:akshayshan28@gmail.com">
+    akshayshan28@gmail.com</a>.</p>
+  </footer>
+</form>
 
-<div class="search-wrapper" id="page1" >
-		<form method=""  >  
-		<select id = 'list' name="focus" required class="search-box" placeholder=" select encryption method ">
-			<option required class="search-box" value="null">---select convertion mode ---</option>
-			<option required class="search-box" value="B"> TO BINARY </option>
-			<option required class="search-box" value="H">TO HEXADECIMAL </option>
-			<option required class="search-box" value="O"> TO OCTAL  </option>
-			</option>
-
-		</select>
-		<br> <br>
-		<button type="button" onclick="datacollection()"   class="button button4">next</button>
-		<br> <br>
-
-		<input type="text" name="focus" required class="search-box" id="output" placeholder="encrypted text" />
-		<button  type="button" onclick="copyClipboard()"   class="button button4">copy to clipboard </button>
-
-	
-		</form>
-	</div>
-
-
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
