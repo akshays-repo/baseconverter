@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Base Converter</title>
-<!-----Including CSS for different screen sizes----->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="css/responsiveform.css">
-<link rel="stylesheet" media="screen and (max-width: 350px)" href="css/responsiveform3.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="js/app.js"></script>
 </head>
 <body>
-<div class="container">
-<div id="envelope">
-<form  method="" class="form">
-<header>
-<h2>Simple Base converter with js </h2>
-</header>
-<br/>
-<input name="name" placeholder="Enter the input" type="text" width="100px;"id="data1">
-<form  method="" class="form">
-    <select id = 'list' name="focus" required class="list" placeholder=" select encryption method ">
-        <option required class="search-box" value="null">---select convertion mode ---</option>
-        <option required class="search-box" value="B"> TO BINARY </option>
-        <option required class="search-box" value="H">TO HEXADECIMAL </option>
-        <option required class="search-box" value="O"> TO OCTAL  </option>
-        </option> 
+    <main>
+        <div class="contact-form">
+                <h3>Base-Converter</h3>
+            <form action="#" method="post" class="form-style">
+                
+                <div class="row">
+                    <label for="name">Enter the number:</label>
+                    <input type="text"  id="data1" autocomplete="off" placeholder="Enter the input">
+                    <span class="border-focus"></span>
+                </div>
 
-    </select> </form>
 
-<div class="form">
-<input id="submit" type="submit" value="submit" onclick="datacollection()" >
-<input id="output" placeholder="output" type="text">
-<input id="submit" type="submit" value="copy to clipboard " onclick="copyClipboard()" >
+                <div class="row">
+                        <form  method="" class="row">
+                                <select id = 'list' name="focus" class="list" placeholder=" select encryption method ">
+                                    <option  value="null">---select convertion mode ---</option>
+                                    <option  value="B"> TO BINARY </option>
+                                    <option  value="H">TO HEXADECIMAL </option>
+                                    <option  value="O"> TO OCTAL  </option>
+                                    </option> 
+                            
+                                </select> </form>
+                                
+                    
+                    <span class="border-focus"></span>
+                    </div>
 
-</div>
-<script src="js/app.js"></script>
-<footer class="form">
-        <p> Created by: Akshay s </p>
-        <p> <a href="mailto:akshayshan28@gmail.com">
-            Contact</a>.</p>
-      </footer>
-    </form>
+
+
+
+                <div class="row-button">
+                        <input type="submit" value="submit" onclick="datacollection()">
+                    </div>
+                <div class="row">
+                    <label for="lname">Result:</label>
+                    <input type="text"  id="output" autocomplete="off" placeholder="output">
+                    <span class="border-focus"></span>
+                </div>
+                <div class="row-button">
+                    <input type="submit" value="copy" onclick="copyClipboard()" >
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
