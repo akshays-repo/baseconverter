@@ -12,13 +12,7 @@ padding:0;
 font-family: 'Roboto Slab', serif;
 background-color: white
 }
-div#envelope{
-width: 55%;
-margin: 10px 30% 10px 25%;
-padding:10px 0;
-border: 2px solid gray;
-border-radius:10px;
-}
+
 .form{
 width:70%;
 margin:4% 15%;
