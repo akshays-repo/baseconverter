@@ -1,11 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-* {
-/* With these codes padding and border does not increase it's width and gives intuitive style.*/
 
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
 body {
 margin:0;
 padding:0;
@@ -18,7 +12,7 @@ width:70%;
 margin:4% 15%;
 }
 header{
-background-color: #4180C5;
+background-color: rgb(26, 200, 212);
 text-align: center;
 padding-top: 12px;
 padding-bottom: 8px;
@@ -30,11 +24,11 @@ color: aliceblue;
 footer{
     background-color: #4180C5;
     text-align: center;
-    padding-top: 12px;
-    padding-bottom: 8px;
-    margin-top: -11px;
-    margin-bottom: -8px;
-    border-radius: 10px 10px 0 0;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    margin-top: -8px;
+    margin-bottom: -11px;
+    border-radius: 0px 0px 10px 10px;
     color: aliceblue;
     }
 /* Makes responsive fields. Sets size and field alignment.*/
@@ -75,11 +69,10 @@ input[type=text]:focus,textarea:focus {
 border-color: #4697e4;
 }
 .list{
-    
-        margin-bottom: 20px;
-        margin-top: 10px;
-        width:100%;
-        padding: 15px;
-        border-radius:5px;
-        border:1px solid #7ac9b7;
+margin-bottom: 20px;
+margin-top: 10px;
+width:100%;
+padding: 15px;
+border-radius:5px;
+border:1px solid #7ac9b7;
 }
